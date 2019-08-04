@@ -1596,24 +1596,29 @@ pre .javascript .function {
   display: inline-block;
 }
 .site-author-image {
-  border: 2px solid #333;
   display: block;
-  height: auto;
   margin: 0 auto;
-  max-width: 96px;
   padding: 2px;
+  max-width: 96px;
+  height: auto;
+  border: 2px solid #333;
+  border-radius: 60%;
+  transition: 2.5s all;
+}
+.site-author-image:hover {
+  transform: rotate(360deg);
 }
 .site-author-name {
-  color: #f5f5f5;
-  font-weight: normal;
   margin: 5px 0 0;
   text-align: center;
+  color: #f5f5f5;
+  font-weight: normal;
 }
 .site-description {
-  color: #999;
-  font-size: 1em;
   margin-top: 5px;
   text-align: center;
+  font-size: 1em;
+  color: #999;
 }
 .links-of-author {
   margin-top: 20px;
@@ -1629,7 +1634,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ff0a9f;
+  background: #8cff55;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
